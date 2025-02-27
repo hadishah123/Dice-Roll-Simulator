@@ -11,10 +11,22 @@
     <h1>Dice Roll Simulator</h1>
     <div class="dice" id="dice">&#9860;</div>
     <button id="roll-button">Roll Dice</button>
-    <ul id="roll-history">
-      <!-- <li>Roll 1: <span>&#9856;</span></li>
-      <li>Roll 2: <span>&#9860;</span></li> -->
-    </ul>
+    <button id="clear-history-button">Clear History</button>
+    
+    <div id="statistics">
+      <p>Total Rolls: <span id="total-rolls">0</span></p>
+      <p>1's Rolled: <span id="ones-count">0</span></p>
+      <p>2's Rolled: <span id="twos-count">0</span></p>
+      <p>3's Rolled: <span id="threes-count">0</span></p>
+      <p>4's Rolled: <span id="fours-count">0</span></p>
+      <p>5's Rolled: <span id="fives-count">0</span></p>
+      <p>6's Rolled: <span id="sixes-count">0</span></p>
+    </div>
+
+    <ul id="roll-history"></ul>
+
+    <audio id="dice-sound" src="dice-roll-sound.mp3"></audio>
+
     <script src="index.js"></script>
   </body>
 </html>
