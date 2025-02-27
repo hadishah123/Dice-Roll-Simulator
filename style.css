@@ -37,6 +37,14 @@ h1 {
   }
 }
 
+@keyframes shake {
+  0% { transform: rotateY(0deg) rotateX(0deg); }
+  25% { transform: rotateY(30deg) rotateX(-30deg); }
+  50% { transform: rotateY(-30deg) rotateX(30deg); }
+  75% { transform: rotateY(30deg) rotateX(-30deg); }
+  100% { transform: rotateY(0deg) rotateX(0deg); }
+}
+
 button {
   background-color: #47a5c4;
   color: white;
@@ -87,4 +95,20 @@ li span {
   font-size: 3rem;
   margin-right: 1rem;
   color: #444;
+}
+
+#statistics {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .dice {
+    font-size: 5rem;
+  }
+
+  button {
+    font-size: 1.2rem;
+    padding: 0.8rem 1.5rem;
+  }
 }
